@@ -97,21 +97,20 @@
 			margin-bottom: 0;
 			line-height: 1.5;
 		}
-		footer {
+		.tooltip {
+			position: absolute;
+			z-index: 1;
 			background-color: #333333;
 			color: #FFFFFF;
-			padding: 20px;
-			text-align: center;
+			padding: 10px;
+			border-radius: 5px;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 0.3s;
+		}
+		.tooltip:hover {
+			opacity: 1;
 		}
 	</style>
 </head>
-<body>
-	<header>
-		<div class="container">
-			<h1>Entwickler- und Gamer-Plattform</h1>
-		</div>
-	</header>
-	<nav>
-		<div class="container">
-			<ul>
-				<li
+<body
